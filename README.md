@@ -14,6 +14,8 @@ Our implementation thus represents the following steps:
 3. Generate the Page Rankings
 4. Utilize the Page Rank values to add weights to number of days suggested by each paper.
 
+##### Results - Incubation period is 5 to 15 days (mean = 9.87 days, SD = 5), weighted incubation period is . Contagious period is 
+
 ## Walkthrough
 
 ### `csvs` Directory
