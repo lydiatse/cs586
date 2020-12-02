@@ -13,7 +13,7 @@ Our implementation thus represents the following steps:
 ## Walkthrough
 
 ### `csvs` Directory
-The `csv` directory houses all of the relevant .csv files.
+The `csvs` directory houses all of the relevant .csv files.
 
 `final_ib.csv` contains the information regarding literature from CORD-19 that pertain to incubation/contagion periods. 
 
