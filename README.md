@@ -14,7 +14,7 @@ Our implementation thus represents the following steps:
 3. Generate the Page Rankings
 4. Utilize the Page Rank values to add weights to number of days suggested by each paper.
 
-##### Results - Incubation period is 5 to 15 days (mean = 9.87 days, SD = 5), weighted incubation period is . Contagious period is 
+##### Results - Incubation period is 5 to 15 days (mean = 9.87 days, SD = 5), weighted incubation period is 9.25 . Contagious period is 2 to 6 days (mean = 4.25 days, SD = 2.12), weighted contagious period is 5 days.
 
 ## Walkthrough
 
