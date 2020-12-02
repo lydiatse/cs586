@@ -8,7 +8,7 @@ We utilized the Semantic Scholar [COVID-19 Open Research Dataset (CORD-19)](http
 Our implementation thus represents the following steps:
 1. Identify keywords associated with incubation period
 2. Extract the relevant papers from the CORD-19 dataset using regex query
-3. Use the CDQA library and Spacy NER model to find the 'answer' to the query 'what is the incubation period'
+3. Use the [CDQA](https://cdqa-suite.github.io/cdQA-website/) library and [Spacy NER model](https://spacy.io/universe/project/video-spacys-ner-model) to find the 'answer' to the query 'what is the incubation period'
 4. Filter extremeties and unrecognizable characters
 5. Repeat the third step again
 3. Generate the Page Rankings
