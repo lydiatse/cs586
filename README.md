@@ -4,7 +4,7 @@ COVID-19: Understanding the range of incubation periods and how long individuals
 
 ## Overview
 
-We utilized the Semantic Scholar [COVID-19 Open Research Dataset (CORD-19)](https://www.semanticscholar.org/cord19) as well as a [literature knowledge graph](https://github.com/GillesVandewiele/COVID-KG) from Steenwinckel et al. derived from the CORD-19 dataset to extract information regarding the COVID-19 incubation and contagion periods.
+We utilized the Semantic Scholar [COVID-19 Open Research Dataset (CORD-19)](https://www.semanticscholar.org/cord19) as well as the [COVID-19 Literature Knowledge Graph](https://github.com/GillesVandewiele/COVID-KG) from Steenwinckel et al. derived from the CORD-19 dataset to extract information regarding the COVID-19 incubation and contagion periods.
 
 Our implementation thus represents the following steps:
 
