@@ -40,7 +40,7 @@ Out of all the papers and their texts, we have to find sentences that mention in
 
 Because we wanted to ensure that we utilized the most credible papers, we opted to use the PageRank algorithm to generate the page ranks based on the number of times a paper has been cited. These rankings were then used as weights in determining the incubation and contagious periods.
 
-`page_rank.ipynb` can be opened in either Google Colab or Jupyter Notebook. There are instructions as well as additional implementation explanations within the `.ipynb`. The first cell can be run to install the dependency libraries: `rdflib`, `networkx`, `tqdm`. Documentation for each of the libraries is listed below:
+`page_rank.ipynb` can be opened in either Google Colab or Jupyter Notebook (**Note:** we used Google Colab to run this file so the paths will need to be updated since we were accessing files in our own Google Drive). There are instructions as well as additional implementation explanations within the `.ipynb`. The first cell can be run to install the dependency libraries: `rdflib`, `networkx`, `tqdm`. Documentation for each of the libraries is listed below:
 
 - [`rdflib`](https://rdflib.readthedocs.io/en/stable/): used to load the literature knowledge graph and generate a citation subgraph.
 - [`networkx`](https://networkx.org/documentation/stable/index.html): used to run the PageRank algorithm
