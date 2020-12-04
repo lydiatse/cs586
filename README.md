@@ -18,17 +18,19 @@ Our implementation thus represents the following steps:
 
 ##### Results - The incubation period is 3.5 to 13.5 days (mean = 8.41 days, SD = 5), weighted incubation period is 8.38 . The contagious period is 3 to 7 days (mean = 5.43 days, SD = 2.12), weighted contagious period is 5.38 days.
 
-## Walkthrough
+## The `implementation` Directory
 
-### `csv` Directory
+This directory contains all of our implementation (code) files along with the additional assets detailed below.
 
-The `csv` directory houses all of the relevant .csv and .tsv files.
+### `assets` Directory
+
+The `assets` directory houses all of the relevant .csv, .tsv files, and the cleaned COVID-19 knowledge graph.
 
 `final_ib.csv` contains the information regarding literature from CORD-19 that pertain to incubation/contagious periods.
 
 `final_ib_pagerankings_title.tsv` contains the resulting page rankings after running the PageRanking algorithm using the `NetworkX` library with the respective title and DOI.
 
-### Utilizing the COVID-19 Literature Knowledge Graph from `data.zip`
+#### Utilizing the COVID-19 Literature Knowledge Graph from `data.zip`
 
 This compressed file contains our modified the knowledge graph in N-Triples format. Note that the knowledge graph was modified due to the parsing errors that were in the original literature knowledge graph.
 
@@ -54,3 +56,7 @@ Once we get number of days suggested by each paper multiply it with its pagerank
 ### Accuracy
 
 We randomly took 100 papers and noted their suggested incubation period and another random 100 for contagious period, the average incubation period we got was 8.5 days which is very close to 8.8 that we found and average contagious period came out to be 4.5 days which is also close to 5.2 that we found.
+
+## Final Report and Presentation
+
+- The `presentation` directory holds our presentation slides in `.ppt` format and the `report` directory holds our final report in `.pdf` format.
