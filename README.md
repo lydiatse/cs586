@@ -4,7 +4,7 @@ COVID-19: Understanding the range of incubation periods and how long individuals
 
 ## Overview
 
-We utilized the Semantic Scholar [COVID-19 Open Research Dataset (CORD-19)](https://www.semanticscholar.org/cord19) as well as the [COVID-19 Literature Knowledge Graph](https://github.com/GillesVandewiele/COVID-KG) from Steenwinckel et al. derived from the CORD-19 dataset to extract information regarding the COVID-19 incubation and contagion periods.
+We utilized the Semantic Scholar [COVID-19 Open Research Dataset (CORD-19)](https://www.semanticscholar.org/cord19) as well as the [COVID-19 Literature Knowledge Graph](https://github.com/GillesVandewiele/COVID-KG) from Steenwinckel et al. derived from the CORD-19 dataset to extract information regarding the COVID-19 incubation and contagious periods.
 
 Our implementation thus represents the following steps:
 
@@ -16,7 +16,7 @@ Our implementation thus represents the following steps:
 6. Generate the Page Rankings
 7. Utilize the Page Rank values to add weights to number of days suggested by each paper.
 
-##### Results - The incubation period is 3.5 to 13.5 days (mean = 8.41 days, SD = 5), weighted incubation period is 8.38 . The contagion period is 3 to 7 days (mean = 5.43 days, SD = 2.12), weighted contagious period is 5.38 days.
+##### Results - The incubation period is 3.5 to 13.5 days (mean = 8.41 days, SD = 5), weighted incubation period is 8.38 . The contagious period is 3 to 7 days (mean = 5.43 days, SD = 2.12), weighted contagious period is 5.38 days.
 
 ## Walkthrough
 
@@ -24,7 +24,7 @@ Our implementation thus represents the following steps:
 
 The `csv` directory houses all of the relevant .csv files.
 
-`final_ib.csv` contains the information regarding literature from CORD-19 that pertain to incubation/contagion periods.
+`final_ib.csv` contains the information regarding literature from CORD-19 that pertain to incubation/contagious periods.
 
 `final_ib_pagerank.csv` contains the resulting page rankings after running the PageRanking algorithm using the `NetworkX` library. Please note that to avoid overriding this page rank file, the output of the `pageRank.ipynb` will be saved as `page_ranking.csv` instead.
 
@@ -38,7 +38,7 @@ Out of all the papers and their texts, we have to find sentences that mention in
 
 ### Generating the Page Rankings with `page_rank.ipynb`
 
-Because we wanted to ensure that we utilized the most credible papers, we opted to use the PageRank algorithm to generate the page ranks based on the number of times a paper has been cited. These rankings were then used as weights in determining the incubation and contagion periods.
+Because we wanted to ensure that we utilized the most credible papers, we opted to use the PageRank algorithm to generate the page ranks based on the number of times a paper has been cited. These rankings were then used as weights in determining the incubation and contagious periods.
 
 `page_rank.ipynb` can be opened in either Google Colab or Jupyter Notebook. There are instructions as well as additional implementation explanations within the `.ipynb`. The first cell can be run to install the dependency libraries: `rdflib`, `networkx`, `tqdm`. Documentation for each of the libraries is listed below:
 
@@ -53,4 +53,4 @@ Once we get number of days suggested by each paper multiply it with its pagerank
 
 ### Accuracy
 
-We randomly took 100 papers and noted their suggested incubation period and another random 100 for contagious period, the average incubation period we got was 8.5 days which is very close to 8.8 that we found and average contagion period came out to be 4.5 days which is also close to 5.2 that we found.
+We randomly took 100 papers and noted their suggested incubation period and another random 100 for contagious period, the average incubation period we got was 8.5 days which is very close to 8.8 that we found and average contagious period came out to be 4.5 days which is also close to 5.2 that we found.
