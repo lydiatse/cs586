@@ -22,11 +22,11 @@ Our implementation thus represents the following steps:
 
 ### `csv` Directory
 
-The `csv` directory houses all of the relevant .csv files.
+The `csv` directory houses all of the relevant .csv and .tsv files.
 
 `final_ib.csv` contains the information regarding literature from CORD-19 that pertain to incubation/contagious periods.
 
-`final_ib_pagerank.csv` contains the resulting page rankings after running the PageRanking algorithm using the `NetworkX` library. Please note that to avoid overriding this page rank file, the output of the `pageRank.ipynb` will be saved as `page_ranking.csv` instead.
+`final_ib_pagerankings_title.tsv` contains the resulting page rankings after running the PageRanking algorithm using the `NetworkX` library with the respective title and DOI.
 
 ### Utilizing the COVID-19 Literature Knowledge Graph from `data.zip`
 
